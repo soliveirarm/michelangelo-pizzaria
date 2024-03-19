@@ -140,6 +140,7 @@ header {
   background-image: url(src/img/1.jpg);
   background-repeat: no-repeat;
   background-position: center;
+  background-size: cover;
   height: 90vh;
   padding: 2rem;
   background-color: #fff9e3;
