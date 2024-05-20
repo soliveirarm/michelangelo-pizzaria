@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="styles/main.css" />
     <link
       rel="shortcut icon"
       href="https://cdn-icons-png.flaticon.com/512/2497/2497913.png"
@@ -15,21 +15,21 @@
 
   <body>
     <header>
-      <div class="logo-container">
+      <div class="logo">
         <img
           src="https://cdn-icons-png.flaticon.com/512/2497/2497913.png"
           alt="pizza logo"
-          class="logo"
+          class="logo-img"
         />
-        <h1 class="logo__title">Michelangelo Pizzaria</h1>
+        <h1 class="logo-title">Michelangelo Pizzaria</h1>
       </div>
-      <span onclick="toggleMenu()" id="burguer-btn">
+      <span onclick="toggleMenu()" id="burgerBtn">
         <i class="fa-solid fa-bars"></i>
       </span>
-      <nav id="menu">
-        <ul>
+      <nav class="menu" id="menu">
+        <ul class="menu-list">
           <li>
-            <a href="src/cardapio.html"
+            <a href="pages/cardapio.html"
               ><i class="fa-solid fa-book"></i>Cardápio</a
             >
           </li>
@@ -44,9 +44,9 @@
     </header>
 
     <main>
-      <section class="texto">
-        <h1>Olá, seja bem-vindo!</h1>
-        <p>
+      <section class="welcome">
+        <h1 class="welcome-title">Olá, seja bem-vindo!</h1>
+        <p class="welcome-description">
           Após anos de tradição, podemos dizer que temos uma grande clientela, e
           somos uma das maiores e mais conceituadas pizzarias da cidade de
           Recife.
@@ -54,48 +54,55 @@
         <h3>Venha nos visitar!</h3>
       </section>
       <section class="art">
-        <img src="src/img/adam's.png" alt="Mão" class="adam" />
-        <img src="src/img/pizza.png" alt="" class="pizza" />
-        <img src="src/img/god's.png" alt="" class="god" />
+        <img src="img/adam's.png" alt="Mão" class="adam" />
+        <img src="img/pizza.png" alt="" class="pizza" />
+        <img src="img/god's.png" alt="" class="god" />
       </section>
     </main>
 
     <footer>
-      <div class="endereco">
+      <div class="address">
         <i class="fa-solid fa-location-dot"></i>
-        <p>
+        <p class="address-text">
           Rua Antônio Simões 1898<br />
           Recife - Pernambuco
         </p>
       </div>
-      <div class="telefone">
+      <div class="phone">
         <i class="fa-solid fa-phone"></i>
-        <p>(81) 2683-5728</p>
+        <p class="phone-number">(81) 2683-5728</p>
       </div>
       <div class="socials">
-        <i class="fa-brands fa-instagram"></i>
-        <a href="https://www.instagram.com" target="_blank"
+        <i class="fa-brands fa-instagram socials-igIcon"></i>
+        <a
+          class="socials-igLink"
+          href="https://www.instagram.com"
+          target="_blank"
           >@michelangelo.pizzaria</a
         >
       </div>
 
-      <div class="creditos">
-        <h2>Créditos</h2>
+      <div class="credits">
+        <h2 class="credits-title">Créditos</h2>
         <a
+          class="credits-link"
           href="https://www.flaticon.com/free-icons/pizza"
           target="_blank"
           title="pizza icons"
-          >Ícone da logo <i class="fa-solid fa-up-right-from-square"></i
+          >Ícone da logo
+          <i class="credits-squareIcon fa-solid fa-up-right-from-square"></i
         ></a>
         <a
+          class="credits-link"
           href="https://www.pexels.com/photo/man-holding-a-pizza-on-a-pizza-shovel-5953573/"
           target="_blank"
-          >Imagem do Banner <i class="fa-solid fa-up-right-from-square"></i
+          >Imagem do Banner
+          <i class="fa-solid fa-up-right-from-square credits-squareIcon"></i
         ></a>
       </div>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="app.js"></script>
     <script
       src="https://kit.fontawesome.com/a14430386d.js"
       crossorigin="anonymous"
